@@ -1,0 +1,14 @@
+<html>
+	<head>
+		<title>Login - FilmTrackr</title>
+		<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename = 'style.css') }}">
+	</head>
+   <body>
+      <form action = "http://localhost:5000/login" method = "POST">
+         <p>Username: <input type = "text" name = "username" placeholder="Username"/></p>
+		 <p>Password: <input type = "text" name = "password" placeholder="8 chars min"/></p>
+		 <p>Email: <input type = "text" name = "email" /></p>
+		 <p><input type = "submit" value = "submit" /></p>
+      </form>
+   </body>
+</html>

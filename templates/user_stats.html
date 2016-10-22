@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>User Stats - FilmTrackr</title>
+		<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename = 'style.css') }}">
+		<script type="text/javascript" src="http://kozea.github.com/pygal.js/javascripts/svg.jquery.js"></script>
+		<script type="text/javascript" src="http://kozea.github.com/pygal.js/javascripts/pygal-tooltips.js"></script>
+	</head>
+	<body>
+		<h1 align="left">What you've been watching:</h1>
+		<h3 align="left">Recently seen:</h3>
+		</br>
+		{% for poster in posters %}
+			<img src={{ poster }} alt="recent films" width=150}>
+		{% endfor %}
+		</br>
+        <figure>
+			<embed type="image/svg+xml" src="/user_theater_graph/" />
+        </figure>
+		<p>You spent ${{ spent}} at the movies since you started tracking.</p>
+		<p>You could have saved ${{ saved }} if you always went to the movies on Tuesday.</p>
+		<figure>
+			<embed type="image/svg+xml" src="/user_weekday_graph/" />
+        </figure>
+		<p>Your favorite genre of film is {{ fav_genre }}</p>
+		<p>Your least-favorite genre of film is {{ worst_genre }}</p>
+		<figure>
+			<embed type="image/svg+xml" src="/user_genre_graph/" />
+        </figure>
+	</body>
+</html>

@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>FilmTrackr</title>
+		<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename = 'style.css') }}">
+	</head>
+	<body>
+		<h1>FilmTrackr</h1>
+		<h2>What the world is watching.</h2>
+		
+		<a href="{{ url_for('upload') }}"><button type="button" name="dump" >Upload File</button></a>
+		<a href="{{ url_for('add') }}"><button type="add">Add Movie</button></a>
+		</br>
+		<a href="{{ url_for('global_stats') }}"><button type="button">Global Stats</button></a>
+	</body>
+</html>
