@@ -7,9 +7,16 @@
 		<script type="text/javascript" src="http://kozea.github.com/pygal.js/javascripts/pygal-tooltips.js"></script>
 	</head>
 	<body>
-		<h1 align="left">What the world is watching:</h1>
-        <figure>
+		<a href="{{ url_for('splash_page') }}"><button type="button" name="logo">FilmTrackr</button></a>
+		<h2 align="left">What the world is watching:</h1>
+		<figure>
 			<embed type="image/svg+xml" src="/global_theater_graph/" />
         </figure>
+		<p>You've earned ${{ profit }} since you started tracking.</p>
+		<p>The tuesday promotion has cost ${{ loss_tues }} and people watching at home has cost ${{ loss_home }}.</p>
+		<p>The potential revenue lost to the above factors is a total of ${{ total_loss }}.</p>
+		<figure>
+		<embed type="image/svg+xml" src="/global_weekday_graph/" />
+		</figure>
 	</body>
 </html>

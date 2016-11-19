@@ -7,8 +7,9 @@
 		<script type="text/javascript" src="http://kozea.github.com/pygal.js/javascripts/pygal-tooltips.js"></script>
 	</head>
 	<body>
-		<h1 align="left">What you've been watching:</h1>
-		<h3 align="left">Recently seen:</h3>
+		<a href="{{ url_for('splash_page') }}"><button type="button" name="logo">FilmTrackr</button></a>
+		<h2 align="left">What you've been watching:</h1>
+		<h3 align="left">Recently seen</h3>
 		</br>
 		{% for poster in posters %}
 			<img src={{ poster }} alt="recent films" width=150}>

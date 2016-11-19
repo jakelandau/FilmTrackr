@@ -36,6 +36,7 @@ button {
     color: white;
     padding: 15px 32px;
     text-align: center;
+	border-radius: 8px;
     text-decoration: none;
     display: inline-block;
     font-size: 16px;
@@ -44,7 +45,37 @@ button {
 	font-family: "Ubuntu", sans-serif;
 }
 
-input[type="submit"]{
+a :link > button {
+	background-color: #008CBA;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+	border-radius: 8px;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+	font-family: "Ubuntu", sans-serif;
+}
+
+a:hover > button {
+	background-color: #f44336;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+	border-radius: 8px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+	font-family: "Ubuntu", sans-serif;
+}
+
+input [type="submit"]{
 	background-color: #008CBA;
     border: none;
     color: white;

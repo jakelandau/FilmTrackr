@@ -5,7 +5,7 @@
 		<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename = 'style.css') }}">
 	</head>
 	<body>
-		<h1>FilmTrackr</h1>
+		<a href="{{ url_for('splash_page') }}"><button type="button" name="logo">FilmTrackr</button></a>
 		<h2>What the world is watching.</h2>
 		
 		<a href="{{ url_for('upload') }}"><button type="button" name="dump" >Upload File</button></a>
